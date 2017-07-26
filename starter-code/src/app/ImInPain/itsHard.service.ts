@@ -13,11 +13,13 @@ export class DoomClass {
     }>;
 
     constructor() {
-    
-}
+        
+    }
 
-addAccessItem(person, message) {
+    addAccessItem(person, message) {
+        console.log("it does work");
+        
+    }
 
-}
 }
 

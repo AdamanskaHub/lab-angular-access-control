@@ -7,12 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
-  person : string;
-  message : string;
-  createdAt: Date;
-
- // getAccessLog()
-
-//  addAccessItem(person, message)
   
 }

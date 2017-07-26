@@ -1,0 +1,26 @@
+<p>
+    doom-fool works!
+</p>
+
+
+<form class="contactsForm">
+    <div>
+        <p>Person:</p>
+        <label for="contact-name"></label>
+        <input type="text" [(ngModel)]="newContact.name" #newContactName>
+    </div>
+
+    <div>
+        <p>Message:</p>
+        <label for="contact-message"></label>
+        <input type="tel" [(ngModel)]="newContact.message" #newContactMessagel>
+    </div>
+    <!-- <div>
+        <p>Image URL:</p>
+        <label for="contact-image"></label>
+        <input type="url" [(ngModel)]="newContact.image" #newContactImage>
+    </div>  -->
+    <button class="formButton" (click)="addAccessItem (newContactName.value, newContactMessage.value)">
+      Submit that shit
+    </button>
+</form>
