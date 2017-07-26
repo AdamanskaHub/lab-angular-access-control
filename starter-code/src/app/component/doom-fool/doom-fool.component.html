@@ -3,24 +3,27 @@
 </p>
 
 
-<form class="contactsForm">
+<form class="contactsForm" (ngSubmit)="submitForm(myForm)" #myForm="ngForm">
+    <!-- (ngSubmit)="submitForm(myForm)" #myForm="ngForm" -->
     <div>
         <p>Person:</p>
-        <label for="contact-name"></label>
-        <input type="text" [(ngModel)]="newContact.name" #newContactName>
+        <input type="text" #thePersonName>
+        <!-- [(ngModel)]="thePerson.name" -->
     </div>
 
     <div>
         <p>Message:</p>
-        <label for="contact-message"></label>
-        <input type="tel" [(ngModel)]="newContact.message" #newContactMessagel>
+        <input type="text" #thePersonMessage>
+        <!-- [(ngModel)]="thePerson.message" -->
     </div>
-    <!-- <div>
-        <p>Image URL:</p>
-        <label for="contact-image"></label>
-        <input type="url" [(ngModel)]="newContact.image" #newContactImage>
-    </div>  -->
-    <button class="formButton" (click)="addAccessItem (newContactName.value, newContactMessage.value)">
+
+    <!-- <button class="formButton" (click)="addAccessItem (newContactName.value, newContactMessage.value)"> -->
+    <button type="submit" (click)="addAccessItem (thePersonName.value, thePersonMessage.value)">
       Submit that shit
     </button>
+
+    <!-- <button (click)="something ('guio')">
+      Submit that!!!!
+    </button> -->
+
 </form>

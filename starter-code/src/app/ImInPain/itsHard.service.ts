@@ -1,3 +1,6 @@
+import { Injectable } from '@angular/core';
+@Injectable()
+
 export class DoomClass {
     // logMessages : Array<Object> = [
     //     {
@@ -13,11 +16,6 @@ export class DoomClass {
     }>;
 
     constructor() {
-        
-    }
-
-    addAccessItem(person, message) {
-        console.log("it does work");
         
     }
 
